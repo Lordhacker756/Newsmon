@@ -13,11 +13,11 @@ const News = (props) =>
     const [page, setPage] = useState(1);
     const [totalResult, setTotalResult] = useState(0);
 
-   //document.title = `Newsmon - ${props.category}`;
+   document.title = `Newsmon - ${props.category}`;
 
     const fetchMoreData = async() =>
     {
-        let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page+1}&pageSize=${props.pageSize}`;
+        let url = `https://dark-gateway.herokuapp.com/https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page+1}&pageSize=${props.pageSize}`;
         setPage(page+1)
         let data = await fetch(url);
         let parsedData = await data.json()
@@ -27,7 +27,7 @@ const News = (props) =>
 
     useEffect( async() => {
         props.setProgress(10);
-         let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&pageSize=${props.pageSize}`;
+         let url = `https://dark-gateway.herokuapp.com/https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&pageSize=${props.pageSize}`;
          setLoading(true);
          let data = await fetch(url);
          let parseData = await data.json();

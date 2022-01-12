@@ -1,5 +1,6 @@
 {
   "name": "newsapp",
+  "homepage": "http://newsapp.darkllp.in",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

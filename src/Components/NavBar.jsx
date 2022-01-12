@@ -39,7 +39,7 @@ const navbar = (props) => {
                                 <Link className="nav-link" to="/technology">Technology</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/about">About</Link>
+                                <Link className="nav-link" to="https://www.linkedin.com/in/utkarsh708/"> <strong>- Made With 💓 By Utkarsh</strong></Link>
                             </li>
                         </ul>
                     </div>
